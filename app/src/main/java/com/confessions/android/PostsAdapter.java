@@ -15,6 +15,8 @@ import com.bumptech.glide.Glide;
 import com.confessions.android.retrofit.ApiClient;
 import com.confessions.android.retrofit.Post;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -27,6 +29,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostViewHold
     public PostsAdapter(Context context, List<Post> posts){
         this.context=context;
         this.posts=posts;
+        Collections.reverse(this.posts);
     }
 
     public class PostViewHolder extends RecyclerView.ViewHolder{
@@ -70,7 +73,9 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.PostViewHold
         Date postDate=new Date(Long.valueOf(post.getTime()));
         Date currentDate=new Date();
         holder.postTime.setText(getQuoteTime((long)(currentDate.getTime()-postDate.getTime())/1000));
-        Glide.with(context).load(ApiClient.BASE_URL+post.getImage()).into(holder.postImage);
+        String imageUrl=ApiClient.BASE_URL+post.getImage();
+        Log.d("awesome","imageUrl:"+imageUrl);
+        GlideApp.with(context).load(imageUrl).centerCrop().into(holder.postImage);
     }
 
     private String getQuoteTime(long seconds){

@@ -3,11 +3,11 @@
     package="com.confessions.android">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -39,9 +39,13 @@
         <activity android:name=".activity.ForgotPasswordActivity" />
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/title_activity_main"
+            android:label="Confessions"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.CreatePostActivity"></activity>
+        <activity android:name=".activity.CreatePostActivity" />
+        <activity
+            android:name=".activity.AboutUsActivity"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".activity.PostViewActivity"></activity>
     </application>
 
 </manifest>
