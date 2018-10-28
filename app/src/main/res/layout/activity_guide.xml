@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_welcome">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dots_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dots_margin_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_above="@id/layoutDots"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="@string/next"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="@string/skip"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".GuideActivity">-->
+    <!---->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingStart="16dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:paddingEnd="10dp"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:id="@+id/linearLayout1">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=">  "-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Don't worry ! You are always anonymous throughout this app."-->
+                <!--android:textColor="#000"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/textView1"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=">  "-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Being honest in your confessions will let you enjoy this app completely."-->
+                <!--android:textColor="#000"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/textView2"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=">  "-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="We take special care of your privacy. We don't share it with anyone."-->
+                <!--android:textColor="#000"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/textView3"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:paddingBottom="5dp">-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=">  "-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#000"-->
+                <!--android:textSize="18sp"-->
+                <!--android:gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="We do not require any membership from you. Stay cool!!!"-->
+                <!--android:textColor="#000"-->
+                <!--android:paddingBottom="5dp"-->
+                <!--android:textSize="16sp"-->
+                <!--android:id="@+id/textView4"/>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/linearLayout2"-->
+        <!--android:layout_below="@+id/linearLayout1"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingStart="10dp"-->
+        <!--android:paddingEnd="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:background="#ededed"-->
+        <!--android:padding="5dp">-->
+        <!--<CheckBox-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Don't show this guide again"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#000"-->
+            <!--android:textSize="17sp"-->
+            <!--android:id="@+id/chkGuide"-->
+            <!--android:checked="false"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/linearLayout2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:text="Okay. I'm in"-->
+        <!--android:id="@+id/btnOk"/>-->
+
+<!--</RelativeLayout>-->
+
